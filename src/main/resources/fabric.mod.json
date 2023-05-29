@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "nightclient",
+  "version": "${version}",
+  "name": "NightClient",
+  "description": "Bagott?",
+  "authors": [
+    "Bla0"
+  ],
+  "contact": {
+    "website": "games.bagottgames.repl.co",
+    "repo": "https://github.com/backa/NightClient"
+  },
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "icon": "assets/nightclient/icon.png",
+  "entrypoints": {
+    "client": [
+      "net.bla0.nightclient.client.NightClientClient"
+    ],
+    "main": [
+      "net.bla0.nightclient.NightClient"
+    ]
+  },
+  "mixins": [
+    "NightClient.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

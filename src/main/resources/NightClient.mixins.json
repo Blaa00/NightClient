@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.bla0.nightclient.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "AbstractBlockStateMixin",
+    "BlockMixin",
+    "CameraMixin",
+    "ChatScreenMixin",
+    "ClientConnectionInvoker",
+    "ClientPlayerEntityMixin",
+    "EntityMixin",
+    "GameMenuScreenMixin",
+    "InGameHudMixin",
+    "LightmapTextureManagerMixin",
+    "WorldRendererMixin"
+  ],
+  "client": [
+    "AbstractClientPlayerEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
